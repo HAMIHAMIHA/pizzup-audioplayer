@@ -1,8 +1,8 @@
 <template>
   <div class="musiclist">
       <div class="mlup">
-          <div class="title">发现好歌单</div>
-          <div class="more">查看更多</div>
+          <div class="title" @click="alertgd">发现好歌单</div>
+          <div class="more" @click="alertgd">查看更多</div>
      </div>
      <div class="mldown">
         <van-swipe :loop="false" :width="150" class="mldown1" :show-indicators="false">
@@ -40,8 +40,12 @@ function changetowan(x){
     }
 }
     return { state ,changetowan};
+},
+methods:{
+  alertgd:function(){
+  alert("点击下方歌单/搜索歌曲/播放下面的歌曲")
 }
-
+}
 }
 </script>
 

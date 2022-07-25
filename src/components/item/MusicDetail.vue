@@ -32,22 +32,22 @@
       </div>
       <div class="detailFooter">
           <div class="top">
-              <van-icon name="like-o" size="0.5rem"/>
-              <van-icon name="down" size="0.5rem"/>
-              <van-icon name="smile-o" size="0.5rem"/>
-              <van-icon name="comment-circle-o" size="0.5rem"/>
-              <van-icon name="link-o" size="0.5rem"/>
+              <van-icon name="like-o" size="0.5rem" @click="alertgd"/>
+              <van-icon name="down" size="0.5rem"  @click="alertgd"/>
+              <van-icon name="smile-o" size="0.5rem" @click="alertgd"/>
+              <van-icon name="comment-circle-o" size="0.5rem" @click="alertgd"/>
+              <van-icon name="link-o" size="0.5rem" @click="alertgd"/>
           </div>
           <div class="middle">
               <input type="range" class="range1" min="0" :max="duration" v-model="currentTime" step="0.03"/>
           </div>
           <div class="top">
-              <van-icon name="exchange" size="0.5rem"/>
+              <van-icon name="exchange" size="0.5rem" @click="alertgd"/>
               <van-icon name="minus" size="0.5rem" @click="goPlay(-1)"/>
               <van-icon name="play-circle-o" size="1rem" v-if="isbtnShow" @click="play"/>
               <van-icon name="pause-circle-o" size="1rem" v-else @click="play"/>
               <van-icon name="plus" size="0.5rem" @click="goPlay(1)"/>
-              <van-icon name="descending" size="0.5rem"/>
+              <van-icon name="descending" size="0.5rem" @click="alertgd"/>
           </div>
       </div>
   </div>
@@ -125,7 +125,11 @@ export default {
                 index=0
             }
             this.updatePlayListIndex(index)
+        },
+        alertgd:function(){
+            alert("点击转盘显示歌词/上一首/下一首/播放和暂停音乐")
         }
+
     },
     watch:{
         currentTime:function(newValue){

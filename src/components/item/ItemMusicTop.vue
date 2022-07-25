@@ -31,19 +31,19 @@
     </div>
     <div class="IconList">
         <div class="iconItem">
-            <van-icon name="comment-circle-o" size=".6rem"/>
+            <van-icon name="comment-circle-o" size=".6rem" @click="alertgd"/>
             <span>评论</span>
         </div>
             <div class="iconItem">
-            <van-icon name="share-o" size=".6rem"/>
+            <van-icon name="share-o" size=".6rem" @click="alertgd"/>
             <span>分享</span>
         </div>
                 <div class="iconItem">
-            <van-icon name="down" size=".6rem"/>
+            <van-icon name="down" size=".6rem" @click="alertgd"/>
             <span>下载</span>
         </div>
                 <div class="iconItem">
-            <van-icon name="passed" size=".6rem"/>
+            <van-icon name="passed" size=".6rem" @click="alertgd"/>
             <span>多选</span>
         </div>
     </div>
@@ -65,6 +65,11 @@ export default {
 }  return {changetowan};
     },
 props:["playlist"],
+methods:{
+    alertgd:function(){
+        alert("点击单曲播放/点击下方歌曲播放/点击下方查看歌曲详情")
+    }
+}
 
 }
 

@@ -14,6 +14,7 @@ function reSize() {
     document.documentElement.style.fontSize = (showWidth / 7.5) + "px" //方便计算
         //设置字体大小, 根屏幕适应.
     document.querySelector("body").style.fontSize = 0.3 + 'rem'
+
 }
 reSize()
 window.onresize = function() {
