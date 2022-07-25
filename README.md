@@ -2,7 +2,9 @@
 
 ### 注意!
 
-运行前端前需要先运行后端部分为前端提供接口，该部分git克隆链接 https://github.com/Binaryify/NeteaseCloudMusicApi.git（来自git https://github.com/Binaryify/NeteaseCloudMusicApi）
+运行前端前需要先运行后端部分为前端提供接口，该部分git克隆链接 https://github.com/Binaryify/NeteaseCloudMusicApi.git
+
+（来自git https://github.com/Binaryify/NeteaseCloudMusicApi）
 
  **后端部分需要在NeteaseCloudMusicApi文件夹的命令行中执行如下代码**
 
